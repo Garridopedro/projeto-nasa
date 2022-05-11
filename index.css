@@ -57,13 +57,13 @@ p,h3,h2 {
 
 @media (max-width:425px){
     #media{
-        max-width: 415px;
+        max-width: 400px;
     }
     p,h3,h2{
-        width: 405px;
+        width: 350px;
     }
     #borda{
-        width: 405px;
-        height: 300px;
+        width: 390px;
+        height: 290px;
     }
 }
