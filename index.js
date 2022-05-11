@@ -11,7 +11,7 @@ $("#btn").click(function (e) {
         error: function (erro) {
             console.log(erro);
             if(erro.responseJSON.code == 400){
-                alert("Ops, ocorreu um erro! Data deve ser entre 16 de junho de 1995 e o dia de hoje" )
+                alert("Ops, ocorreu um erro! \n\n Data deve ser entre 16 de junho de 1995 e o dia de hoje" )
             }
         },
     });
