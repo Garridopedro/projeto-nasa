@@ -10,6 +10,9 @@ $("#btn").click(function (e) {
         },
         error: function (erro) {
             console.log(erro);
+            if(erro.responseJSON.code == 400){
+                alert("Ops, ocorreu um erro! Data deve ser entre 16 de junho de 1995 e o dia de hoje" )
+            }
         },
     });
     $(`<div id='text'></div> <div id='date'></div> <div id='title'></div> <div id='media'></div>`).appendTo("#resultado")
