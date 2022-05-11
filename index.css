@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Fugaz One', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Lato&family=M+PLUS+1:wght@500&family=Open+Sans:wght@700&family=Signika:wght@600&display=swap');
+}
+
+body {
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(https://images2.alphacoders.com/805/805172.jpg);
+}
+
+form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Fugaz One', cursive;
+    margin: 30px 0 25px;
+}
+
+#data,#btn {
+    margin: 10px;
+}
+
+#btn {
+    padding: 8px 30px;
+    font-family: 'Fugaz One', cursive;
+    font-weight: bold;
+}
+
+#data {
+    padding: 10px;
+}
+
+p,h3,h2 {
+    font-family: 'Fugaz One', cursive;
+    font-size: 1.2em;
+    padding: 10px;
+    width: 700px;
+}
+
+#borda {
+    border: 4px solid rgb(255, 255, 255);
+    width: 730px;
+    height: 542px
+}
+
+@media (max-width:425px){
+    #media{
+        max-width: 415px;
+    }
+    p,h3,h2{
+        width: 405px;
+    }
+    #borda{
+        width: 405px;
+        height: 300px;
+    }
+}
