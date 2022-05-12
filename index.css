@@ -1,18 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-@font-face {
-    font-family: 'Fugaz One', cursive;
-    src: url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Lato&family=M+PLUS+1:wght@500&family=Open+Sans:wght@700&family=Signika:wght@600&display=swap');
+    font-family: 'Merriweather', serif;
 }
 
 body {
     color: white;
     background-size: cover;
     background-attachment: fixed;
-    background-image: url(https://images2.alphacoders.com/805/805172.jpg);
+    background-image: url(https://images4.alphacoders.com/101/1011715.jpg);
 }
 
 form {
@@ -24,46 +20,100 @@ form {
 }
 
 h1 {
-    font-family: 'Fugaz One', cursive;
     margin: 30px 0 25px;
 }
 
-#data,#btn {
+#data,
+#btn {
     margin: 10px;
+    cursor: pointer;
 }
 
 #btn {
     padding: 8px 30px;
-    font-family: 'Fugaz One', cursive;
     font-weight: bold;
+
+}
+
+#btn:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
 }
 
 #data {
     padding: 10px;
 }
 
-p,h3,h2 {
-    font-family: 'Fugaz One', cursive;
+.img {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+
+p,
+h3,
+h2 {
     font-size: 1.2em;
     padding: 10px;
     width: 700px;
 }
 
 #borda {
-    border: 4px solid rgb(255, 255, 255);
+    border: 4px inset #b7b9a5;
     width: 730px;
     height: 542px
 }
 
-@media (max-width:425px){
-    #media{
+#media {
+    padding: 20px;
+}
+
+
+@media (max-width:425px) {
+    #media {
         max-width: 400px;
     }
-    p,h3,h2{
+
+    p,h3,h2 {
+        max-width: 350px;
+    }
+
+    #borda {
+        width: 350px;
+        height: 290px;
+    }
+}
+
+@media (max-width:480px) {
+    #media {
+        max-width: 400px;
+    }
+
+    p,
+    h3,
+    h2 {
         width: 350px;
     }
-    #borda{
-        width: 390px;
+
+    #borda {
+        width: 350px;
+        height: 290px;
+    }
+}
+
+@media (max-width:768px) {
+    #media {
+        max-width: 800px;
+    }
+
+    p,
+    h3,
+    h2 {
+        width: 600px;
+    }
+
+    #borda {
+        width: 350px;
         height: 290px;
     }
 }
