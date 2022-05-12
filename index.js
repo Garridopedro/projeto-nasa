@@ -23,8 +23,8 @@ function mostra(resposta) {
     $('#text').prepend(`<p>${resposta.explanation}</p>`)
     $('#title').prepend(`<h3>${resposta.title}</h3>`)
     if (resposta.media_type == "video") {
-        $('#media').prepend(`<iframe id='borda' src='${resposta.url}'></iframe><p> Link do video: <a href="${resposta.url}" target="_Blank">Here<a>`)
+        $('#media').prepend(`<iframe id='borda' src='${resposta.url}'></iframe>`)
     } else if (resposta.media_type == 'image') {
-        $('#media').prepend(`<a href="${resposta.url}" target="_Blank"><img id='borda'src='${resposta.url}'/></a><p> Link da foto: <a href="${resposta.url}" target="_Blank">Here<a></p>`)
+        $('#media').prepend(`<a href="${resposta.url}" target="_Blank"><img id='borda'src='${resposta.url}'/></a>`)
     }
 }
